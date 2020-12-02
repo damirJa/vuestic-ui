@@ -153,6 +153,10 @@ export const navigationRoutes: NavigationRoute[] = [
         displayName: 'menu.fileUpload',
       },
       {
+        name: 'dataTable',
+        displayName: 'menu.dataTable',
+      },
+      {
         category: 'menu.categories.layout',
         name: 'card',
         displayName: 'menu.card',

@@ -748,6 +748,12 @@
         "default": "Slot for backtop content"
       }
     },
+    "VaDataTable": {
+      "props": {},
+      "events": {},
+      "methods": {},
+      "slots": {}
+    },
     "VaColorPicker": {
       "props": {
         "value": "Current picked color"
@@ -891,6 +897,7 @@
     "accordion": "Accordion",
     "chip": "Chip",
     "grid": "Grid",
+    "dataTable": "Table",
     "input": "Input",
     "list": "List",
     "select": "Select",
@@ -2065,6 +2072,9 @@
         ]
       }
     }
+  },
+  "dataTable": {
+    "title": "Tables"
   },
   "list": {
     "title": "List",

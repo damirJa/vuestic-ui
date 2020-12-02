@@ -291,6 +291,7 @@
     "select": "Select",
     "parallax": "Parallax",
     "backtop": "Backtop",
+    "dataTable": "Table",
     "colorPicker": "Color Picker",
     "colorInput": "Color Input",
     "colorSlider": "Color Slider",
@@ -354,6 +355,9 @@
   "parallax": {},
   "backtop": {
     "title": "-- Here is the title --"
+  },
+  "dataTable": {
+    "title": "Tables"
   },
   "colorPicker": {
     "title": "-- Here is the title --"

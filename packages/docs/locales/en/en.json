@@ -897,7 +897,7 @@
     "accordion": "Accordion",
     "chip": "Chip",
     "grid": "Grid",
-    "dataTable": "Table",
+    "dataTable": "Data Table",
     "input": "Input",
     "list": "List",
     "select": "Select",
@@ -2074,7 +2074,14 @@
     }
   },
   "dataTable": {
-    "title": "Tables"
+    "title": "Data table",
+    "summaryText": "The `va-data-table` component is a super-charged table view",
+    "examples": {
+      "default": {
+        "title": "Basic usage",
+        "text": ""
+      }
+    }
   },
   "list": {
     "title": "List",

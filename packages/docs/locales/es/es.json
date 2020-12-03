@@ -270,6 +270,12 @@
       "events": {},
       "methods": {},
       "slots": {}
+    },
+    "VaDataTable": {
+      "props": {},
+      "events": {},
+      "methods": {},
+      "slots": {}
     }
   },
   "menu": {
@@ -291,7 +297,7 @@
     "select": "Select",
     "parallax": "Parallax",
     "backtop": "Backtop",
-    "dataTable": "Table",
+    "dataTable": "Data Table",
     "colorPicker": "Color Picker",
     "colorInput": "Color Input",
     "colorSlider": "Color Slider",
@@ -357,7 +363,7 @@
     "title": "-- Here is the title --"
   },
   "dataTable": {
-    "title": "Tables"
+    "title": "-- Here is the title --"
   },
   "colorPicker": {
     "title": "-- Here is the title --"

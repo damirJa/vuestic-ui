@@ -1,7 +1,10 @@
 <template>
   <va-data-table
     :fields="fields"
-    :data="filteredUsers"/>
+    :data="filteredUsers"
+    :per-page="perPage"
+    :currentPage="currentPage"
+    @pageSelected="selectHandler($event)"/>
 </template>
 
 <script lang="ts">

@@ -1,7 +1,16 @@
 <template>
-  <va-data-table
-    :fields="fields"
-    :data="filteredUsers"/>
+  <div class="interactive-wrap">
+    <va-data-table
+      :fields="fields"
+      :data="users"
+      :currentPage="currentPage"
+      clickable="true"
+      hoverable="true"
+      @pageSelected="selectHandler($event)"
+      @rowClicked="selectedUser = $event"
+    />
+    <div class="selection">You selected: <br> {{selectedUser.fullName}}</div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -16,10 +25,8 @@ import VaDataTable from '../../../ui/src/components/vuestic-components/va-data-t
   },
 })
 export default class VaDataTableExample extends Vue {
-    term = ''
-    perPage = 4
     currentPage = 1
-    perPageOptions: Array<number> = [4, 6, 10]
+    selectedUser = {}
     users: Array<any> = users.slice()
     fields: Array<any> = [{
       name: '__slot:select',
@@ -42,15 +49,18 @@ export default class VaDataTableExample extends Vue {
     selectHandler ($event: number) {
       this.currentPage = $event
     }
-
-    get filteredUsers (): Array<any> {
-      if (!this.term || this.term.length < 1) {
-        return this.users
-      }
-
-      return this.users.filter(user => {
-        return user.firstName.toLowerCase().startsWith(this.term.toLowerCase())
-      })
-    }
 }
 </script>
+
+<style scoped lang="scss">
+  .selection {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .interactive-wrap {
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+  }
+</style>

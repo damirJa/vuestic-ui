@@ -2078,8 +2078,15 @@
     "summaryText": "The `va-data-table` component is a super-charged table view",
     "examples": {
       "default": {
-        "title": "Basic usage",
-        "text": ""
+        "title": "Basic usage"
+      },
+      "pagination": {
+        "title": "Pagination",
+        "text": "You could set a number of items on the page by `per-page` prop and receive the `@pageSelected` event on change"
+      },
+      "interactive": {
+        "title": "Interactive",
+        "text": "You could interact with row with `clickable` prop and receive the `@rowClicked` event on click. The `hoverable` prop used to make an animation on a row by hover"
       }
     }
   },
